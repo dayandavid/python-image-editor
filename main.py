@@ -1,6 +1,4 @@
-import compress
-import converter
-import resize
+import image_tools
 
 exit = False
 while not exit:

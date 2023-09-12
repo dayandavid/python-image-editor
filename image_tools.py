@@ -3,7 +3,11 @@ from PIL import Image
 Image.MAX_IMAGE_PIXELS = None
 
 
-def compress(filename):
+def compress(filename: str) -> None:
+    """
+    Compress the image 70% quality
+    """
+
     # Open the image file
     img = Image.open(f'{filename}.jpg')
 
@@ -11,7 +15,7 @@ def compress(filename):
     img.save('compressed.jpg', optimize=True, quality=70)
 
 
-def resize():
+def resize(filename: str) -> None:
     # Open the image
     image = Image.open('image.jpg')
 
